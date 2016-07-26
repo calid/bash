@@ -1,10 +1,13 @@
 ## Bash with Configurable Mode Strings ##
 
-This is a patched version of bash 4.3 that adds support for custom prompt mode indicators. It also adds support for a `\m` prompt escape to specify where in the prompt the indicator should occur.
+*Updates*
+* July 26, 2016 - rebased onto bash 4.3.46 master
+
+This is a patched version of bash `4.3.46` that adds support for custom prompt mode indicators. It also adds support for a `\m` prompt escape to specify where in the prompt the indicator should occur.
 
 ![modestr demo](http://i.imgur.com/7P9FqOn.gif?1)
 
-This will (mostly) [be available in bash 4.4/readline 7.0](http://thread.gmane.org/gmane.comp.shells.bash.bugs/22580/focus=22613).  However the 4.4 beta is currently pretty buggy and the `\m` indicator hasn't been accepted (yet). So for now if you really want this functionality you'll probably have to use the patched 4.3 version.
+This will (mostly) [be available in bash 4.4/readline 7.0](http://thread.gmane.org/gmane.comp.shells.bash.bugs/22580/focus=22613).  However the 4.4 beta is currently pretty buggy and it's uncertain when or if the `\m` escape will be accepted. So for now if you really want this functionality you'll probably have to use the patched 4.3 version.
 
 
 ## Install ##
@@ -16,6 +19,13 @@ This will (mostly) [be available in bash 4.4/readline 7.0](http://thread.gmane.o
     $ sudo make install
 
 You can also just run `./bash` after make completes if you want to try the patched version without installing it
+
+**Important**
+
+This is basically a development branch, and as such I may periodically rebase it onto the latest bash master to keep it up to date.  This will cause local branch history to diverge (and cause `git pull` to open a Merge commit).  You can avoid this and reset your local branch to the latest rebased version by doing:
+
+    $ git fetch origin
+    $ git reset --hard origin/modestrs
 
 ## Usage ##
 
