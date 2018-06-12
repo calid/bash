@@ -1,9 +1,10 @@
 ## Bash with Configurable Mode Strings ##
 
 *Updates*
+* June 12, 2018 - applied 4.3 patches 47 and 48 and rebased
 * July 26, 2016 - rebased onto bash 4.3.46 master
 
-This is a patched version of bash `4.3.46` that adds support for custom prompt mode indicators. It also adds support for a `\m` prompt escape to specify where in the prompt the indicator should occur.
+This is a patched version of bash `4.3.48` that adds support for custom prompt mode indicators. It also adds support for a `\m` prompt escape to specify where in the prompt the indicator should occur.
 
 ![modestr demo](http://i.imgur.com/7P9FqOn.gif?1)
 
