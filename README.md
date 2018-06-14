@@ -8,8 +8,7 @@ This is a patched version of bash `4.3.48` that adds support for custom prompt m
 
 ![modestr demo](http://i.imgur.com/7P9FqOn.gif?1)
 
-This will (mostly) [be available in bash 4.4/readline 7.0](http://thread.gmane.org/gmane.comp.shells.bash.bugs/22580/focus=22613).  However the 4.4 beta is currently pretty buggy and it's uncertain when or if the `\m` escape will be accepted. So for now if you really want this functionality you'll probably have to use the patched 4.3 version.
-
+Custom prompt mode indicators are now supported in bash `4.4`/readline `7.0`.  However the `\m` escape functionality was not included in the new version.  For a patched version of bash `4.4`/readline `7.0` that adds the `\m` escape functionality see the `modestrs-4.4` branch.
 
 ## Install ##
 
