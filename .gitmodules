@@ -1,0 +1,4 @@
+[submodule "lib/readline"]
+	path = lib/readline
+	url = https://github.com/calid/readline.git
+	branch = modestrs-7.0-bash-embedded
